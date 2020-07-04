@@ -1,0 +1,2 @@
+class DraftPack < ApplicationRecord
+end

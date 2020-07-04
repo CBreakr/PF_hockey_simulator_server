@@ -1,0 +1,2 @@
+class SampleDivisionName < ApplicationRecord
+end
