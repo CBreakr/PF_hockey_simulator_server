@@ -1,97 +1,104 @@
 
 def addTeams
     puts "Teams"
+
+    teams = ["Admirals",
+        "Alpines",
+        "Arrows",
+        "Bandits",
+        "Barons",
+        "Barracuda",
+        "Bears",
+        "Beasts",
+        "Beavers",
+        "Blades",
+        "Blazers",
+        "Blizzards",
+        "Bombers",
+        "Brawlers",
+        "Buccaneers",
+        "Bulldogs",
+        "Cascades",
+        "Checkers",
+        "Cobras",
+        "Comets",
+        "Condors",
+        "Cougars",
+        "Cyclones",
+        "Delta",
+        "Demons",
+        "Dragons",
+        "Dynamo",
+        "Eagles",
+        "Engineers",
+        "Express",
+        "Falcons",
+        "Firebirds",
+        "Freeze",
+        "Fury",
+        "Generals",
+        "Giants",
+        "Gladiators",
+        "Gliders",
+        "Glory",
+        "Griffins",
+        "Hornets",
+        "Ice Dogs",
+        "Icemen",
+        "Kodiaks",
+        "Lancers",
+        "Lawmen",
+        "Lumberjacks",
+        "Mariners",
+        "Miners",
+        "Monarchs",
+        "Moose",
+        "Mustangs",
+        "Narwhals",
+        "Otters",
+        "Outlaws",
+        "Phantoms",
+        "Pioneers",
+        "Pistons",
+        "Pythons",
+        "Raiders",
+        "Rampage",
+        "Rapids",
+        "Rattlers",
+        "Rebels",
+        "Rockets",
+        "Saints",
+        "Sasquash",
+        "Scorpions",
+        "Seals",
+        "Spartans",
+        "Spiders",
+        "Spitfires",
+        "Stampede",
+        "Steelhawks",
+        "Storm",
+        "Thunder",
+        "Tigers",
+        "Titans",
+        "Trojans",
+        "Turbines",
+        "Vikings",
+        "Voyagers",
+        "Walruses",
+        "Warriors",
+        "Whalers",
+        "Wildcats",
+        "Wolverines",
+        "Wolves",
+        "Wonders",
+        "Wranglers"
+    ]
+
+    teams.each do |t|
+        SampleTeamName.create(name: t)
+    end
 end
 
 =begin
-Admirals
-Alpines
-Arrows
-Bandits
-Barons
-Barracuda
-Bears
-Beasts
-Beavers
-Blades
-Blazers
-Blizzards
-Bombers
-Brawlers
-Buccaneers
-Bulldogs
-Cascades
-Checkers
-Cobras
-Comets
-Condors
-Cougars
-Cyclones
-Delta
-Demons
-Dragons
-Dynamo
-Eagles
-Engineers
-Express
-Falcons
-Firebirds
-Freeze
-Fury
-Generals
-Giants
-Gladiators
-Gliders
-Glory
-Griffins
-Hornets
-Ice Dogs
-Icemen
-Kodiaks
-Lancers
-Lawmen
-Lumberjacks
-Mariners
-Miners
-Monarchs
-Moose
-Mustangs
-Narwhals
-Otters
-Outlaws
-Phantoms
-Pioneers
-Pistons
-Pythons
-Raiders
-Rampage
-Rapids
-Rattlers
-Rebels
-Rockets
-Saints
-Sasquash
-Scorpions
-Seals
-Spartans
-Spiders
-Spitfires
-Stampede
-Steelhawks
-Storm
-Thunder
-Tigers
-Titans
-Trojans
-Turbines
-Vikings
-Voyagers
-Walruses
-Warriors
-Whalers
-Wildcats
-Wolverines
-Wolves
-Wonders
-Wranglers
+
 =end

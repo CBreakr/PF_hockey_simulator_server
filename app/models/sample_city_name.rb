@@ -1,0 +1,2 @@
+class SampleCityName < ApplicationRecord
+end

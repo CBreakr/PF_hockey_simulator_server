@@ -1,2 +1,0 @@
-class SampleCity < ApplicationRecord
-end

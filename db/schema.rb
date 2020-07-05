@@ -123,7 +123,7 @@ ActiveRecord::Schema.define(version: 2020_07_03_151329) do
     t.integer "conference_id"
   end
 
-  create_table "sample_cities", force: :cascade do |t|
+  create_table "sample_city_names", force: :cascade do |t|
     t.string "name"
     t.boolean "is_east"
     t.datetime "created_at", precision: 6, null: false

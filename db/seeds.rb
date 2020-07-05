@@ -25,7 +25,7 @@ Season.delete_all
 Team.delete_all
 
 SampleDivisionName.delete_all
-SampleCity.delete_all
+SampleCityName.delete_all
 SampleFirstName.delete_all
 SampleLastName.delete_all
 SampleTeamName.delete_all
