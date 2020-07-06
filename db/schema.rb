@@ -72,6 +72,7 @@ ActiveRecord::Schema.define(version: 2020_07_03_151329) do
     t.integer "salary_cap"
     t.float "average_cap_percentage_increase"
     t.float "cap_increase_chance"
+    t.integer "playoff_teams"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -126,6 +127,7 @@ ActiveRecord::Schema.define(version: 2020_07_03_151329) do
   create_table "sample_city_names", force: :cascade do |t|
     t.string "name"
     t.boolean "is_east"
+    t.integer "rank"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

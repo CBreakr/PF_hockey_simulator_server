@@ -3,11 +3,92 @@ def addCities
     puts "Cities"
 
     cities = [
-        
+        ["New York City", true, 1],
+        ["Toronto", true, 1],
+        ["Montreal", true, 1],
+        ["Philadelphia", true, 1],
+        ["Boston", true, 1],
+        ["Ottawa", true, 1],
+        ["Detroit", true, 1],
+        ["Jacksonville", true, 2],
+        ["Columbus", true, 2],
+        ["Charlotte", true, 2],
+        ["Washington DC", true, 2],
+        ["Baltimore", true, 2],
+        ["Louisville", true, 2],
+        ["Hamilton", true, 2],
+        ["Quebec City", true, 2],
+        ["Atlanta", true, 2],
+        ["Raliegh", true, 2],
+        ["Miami", true, 2],
+        ["Tampa", true, 2],
+        ["New Orleans", true, 2],
+        ["Cleveland", true, 2],
+        ["Orlando", true, 2],
+        ["Newark", true, 2],
+        ["London", true, 2],
+        ["Pittsburgh", true, 3],
+        ["Jersey City", true, 3],
+        ["Toledo", true, 2],
+        ["Grand Rapids", true, 3],
+        ["Missisaugua", true, 3],
+        ["Brampton", true, 3],
+        ["Indianapolis", true, 3],
+        ["Cincinnati", true, 3],
+        ["Fort Wayne", true, 3],
+        ["St Petersburgh", true, 3],
+        ["Greensboro", true, 3],
+        ["Kitchener", true, 3],
+        ["Windsor", true, 3],
+        ["Laval", true, 3],
+        ["Gatineau", true, 3],
+        ["St John's", true, 3],
+        ["Lexington", true, 3],
+        ["Los Angeles", false, 1],
+        ["Chicago", false, 1],
+        ["Dallas", false, 1],
+        ["Calgary", false, 1],
+        ["Vancouver", false, 1],
+        ["Denver", false, 1],
+        ["Edmonton", false, 1],
+        ["Winnipeg", false, 2],
+        ["Houston", false, 2],
+        ["Phoenix", false, 2],
+        ["San Antonio", false, 2],
+        ["San Diego", false, 2],
+        ["San Jose", false, 2],
+        ["Austin", false, 2],
+        ["San Francisco", false, 2],
+        ["Seattle", false, 2],
+        ["El Paso", false, 2],
+        ["Nashville", false, 2],
+        ["Portland", false, 2],
+        ["Las Vegas", false, 2],
+        ["Milwaukee", false, 2],
+        ["Anaheim", false, 2],
+        ["St Louis", false, 2],
+        ["Minneapolis", false, 2],
+        ["Kansas City", false, 2],
+        ["Fort Worth", false, 3],
+        ["Tuscon", false, 3],
+        ["Albuquerque", false, 3],
+        ["Fresno", false, 3],
+        ["Sacramento", false, 3],
+        ["Colorado Springs", false, 3],
+        ["Surrey", false, 3],
+        ["Oakland", false, 3],
+        ["Memphis", false, 3],
+        ["Oklahoma City", false, 3],
+        ["Omaha", false, 3],
+        ["Wichita", false, 3],
+        ["Saint Paul", false, 3],
+        ["Saskatoon", false, 3],
+        ["Madison", false, 3],
+        ["Regina", false, 3]
     ]
 
     cities.each do |c|
-        SampleCityName.create(name: c[0], is_east: c[1])
+        SampleCityName.create(name: c[0], is_east: c[1], rank: c[2])
     end
 end
 
@@ -17,96 +98,92 @@ end
 
 EAST
 ==========
-["New York City", true],
-Toronto
-Montreal
-Philadelphia
-Boston
-Ottawa
-Detroit
-
-Jacksonville
-Columbus
-Charlotte
-Washington DC
-Baltimore
-Louisville
-Hamilton
-Quebec City
-Atlanta
-Raliegh
-Miami
-Tampa
-New Orleans
-Cleveland
-Orlando
-Newark
-Jersey City
-London
-Toledo
-Pittsburgh
-
-Grand Rapids
-Missisaugua
-Brampton
-Indianapolis
-Cincinnati
-Fort Wayne
-St Petersburgh
-Greensboro
-Kitchener
-Windsor
-Laval
-Gatineau
-St John's
-Lexington
+["New York City", true, 1],
+["Toronto", true, 1],
+["Montreal", true, 1],
+["Philadelphia", true, 1],
+["Boston", true, 1],
+["Ottawa", true, 1],
+["Detroit", true, 1],
+["Jacksonville", true, 2],
+["Columbus", true, 2],
+["Charlotte", true, 2],
+["Washington DC", true, 2],
+["Baltimore", true, 2],
+["Louisville", true, 2],
+["Hamilton", true, 2],
+["Quebec City", true, 2],
+["Atlanta", true, 2],
+["Raliegh", true, 2],
+["Miami", true, 2],
+["Tampa", true, 2],
+["New Orleans", true, 2],
+["Cleveland", true, 2],
+["Orlando", true, 2],
+["Newark", true, 2],
+["Jersey City", true, 2],
+["London", true, 2],
+["Toledo", true, 2],
+["Pittsburgh", true, 2],
+["Grand Rapids", true, 3],
+["Missisaugua", true, 3],
+["Brampton", true, 3],
+["Indianapolis", true, 3],
+["Cincinnati", true, 3],
+["Fort Wayne", true, 3],
+["St Petersburgh", true, 3],
+["Greensboro", true, 3],
+["Kitchener", true, 3],
+["Windsor", true, 3],
+["Laval", true, 3],
+["Gatineau", true, 3],
+["St John's", true, 3],
+["Lexington", true, 3],
 
 
 WEST
 ==========
-Los Angeles
-Chicago
-Dallas
-Calgary
-Winnipeg
-Vancouver
-Denver
-
-Houston
-Phoenix
-San Antonio
-San Diego
-San Jose
-Austin
-Edmonton
-San Francisco
-Seattle
-El Paso
-Fort Worth
-Nashville
-Portland
-Las Vegas
-Milwaukee
-Anaheim
-Tuscon
-St Louis
-Minneapolis
-Kansas City
-
-Albuquerque
-Fresno
-Sacramento
-Colorado Spring
-Surrey
-Oakland
-Memphis
-Oklahoma City
-Omaha
-Wichita
-Saint Paul
-Saskatoon
-Madison
-Regina
+["Los Angeles", false, 1],
+["Chicago", false, 1],
+["Dallas", false, 1],
+["Calgary", false, 1],
+["Winnipeg", false, 1],
+["Vancouver", false, 1],
+["Denver", false, 1],
+["Houston", false, 2],
+["Phoenix", false, 2],
+["San Antonio", false, 2],
+["San Diego", false, 2],
+["San Jose", false, 2],
+["Austin", false, 2],
+["Edmonton", false, 2],
+["San Francisco", false, 2],
+["Seattle", false, 2],
+["El Paso", false, 2],
+["Fort Worth", false, 2],
+["Nashville", false, 2],
+["Portland", false, 2],
+["Las Vegas", false, 2],
+["Milwaukee", false, 2],
+["Anaheim", false, 2],
+["Tuscon", false, 2],
+["St Louis", false, 2],
+["Minneapolis", false, 2],
+["Kansas City", false, 2],
+["Albuquerque", false, 3],
+["Fresno", false, 3],
+["Sacramento", false, 3],
+["Colorado Springs, false, 3],
+["Surrey", false, 3],
+["Oakland", false, 3],
+["Memphis", false, 3],
+["Oklahoma City", false, 3],
+["Omaha", false, 3],
+["Wichita", false, 3],
+["Saint Paul", false, 3],
+["Saskatoon", false, 3],
+["Madison", false, 3],
+["Regina", false, 3]
 
 ================================
 ================================
