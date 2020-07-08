@@ -69,10 +69,11 @@ ActiveRecord::Schema.define(version: 2020_07_03_151329) do
 
   create_table "leagues", force: :cascade do |t|
     t.string "name"
-    t.integer "salary_cap"
+    t.float "salary_cap"
     t.float "average_cap_percentage_increase"
     t.float "cap_increase_chance"
     t.integer "playoff_teams"
+    t.integer "year"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

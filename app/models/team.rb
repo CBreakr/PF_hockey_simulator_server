@@ -5,6 +5,14 @@ class Team < ApplicationRecord
     has_many :draft_players
     has_many :player_seasons
 
+    def full_display
+        # here I want to get all conferences, teams, cities
+        return {
+            name: self.name,
+            city: self.city
+        }
+    end
+
     def games
 
     end
@@ -18,7 +26,7 @@ class Team < ApplicationRecord
     end
 
     def playoff_series
-        
+
     end
 
 end

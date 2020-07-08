@@ -9,7 +9,8 @@ class League < ApplicationRecord
     def full_display
         # here I want to get all conferences, teams, cities
         return {
-            name: self.name
+            name: self.name,
+            conferences: self.conferences.map {|c| c.full_display}
         }
     end
 
@@ -35,13 +36,14 @@ class League < ApplicationRecord
                             east_city_names = city_names = get_city_names_shuffled_by_rank(true, false, divisions_per_conference*teams_per_division)
                             west_city_names = city_names = get_city_names_shuffled_by_rank(false, true, divisions_per_conference*teams_per_division)
 
-                            self.conferences[0].fill_in_conference(division_names, east_city_names, team_names, teams_per_division)
-                            self.conferences[1].fill_in_conference(division_names, west_city_names, team_names, teams_per_division)
+                            self.conferences[0].fill_in_conference(divisions_per_conference, division_names, east_city_names, team_names, teams_per_division)
+                            self.conferences[1].fill_in_conference(divisions_per_conference, division_names, west_city_names, team_names, teams_per_division)
                         else
                             # create singular
                             city_names = get_city_names_shuffled_by_rank(false, false, divisions_per_conference*teams_per_division)
                             self.conferences << Conference.create(name:"Overall", is_east: false)
-                            self.conferences[0].fill_in_conference(division_names, city_names, team_names, teams_per_division)
+
+                            self.conferences[0].fill_in_conference(divisions_per_conference, division_names, city_names, team_names, teams_per_division)
                         end
                     end
                 end
@@ -83,13 +85,13 @@ class League < ApplicationRecord
 
         # use the ranks
         if cities_per_conference <= first_rank.length then
-            cities = first_rank.shuffle!.first(cities_per_conference)
+            cities = first_rank.shuffle.first(cities_per_conference)
         elsif cities_per_conference <= first_rank.length + second_rank.length then
             second_cities_count = cities_per_conference - first_rank.length
-            cities = first_rank + second_rank.shuffle!.first(second_cities_count)
+            cities = first_rank + second_rank.shuffle.first(second_cities_count)
         else
             third_cities_count = cities_per_conference - (first_rank.length + second_rank.length)
-            cities = first_rank + second_rank + third_rank.shuffle!.first(third_cities_count)
+            cities = first_rank + second_rank + third_rank.shuffle.first(third_cities_count)
         end
 
         # return
